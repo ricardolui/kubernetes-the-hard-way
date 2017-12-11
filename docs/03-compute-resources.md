@@ -101,7 +101,6 @@ Create three compute instances which will host the Kubernetes control plane:
 ```
 for i in 0 1 2; do
   gcloud compute instances create controller-${i} \
-    --async \
     --boot-disk-size 200GB \
     --can-ip-forward \
     --image-family ubuntu-1604-lts \
